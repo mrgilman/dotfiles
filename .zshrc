@@ -2,7 +2,7 @@
 . ~/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
-export PS1="%{$fg_bold[green]%}%~%{$fg_bold[blue]%}\$(__git_ps1 ' %s') %{$fg_bold[magenta]%}$ %{$reset_color%}"
+setopt PROMPT_SUBST ; PS1="%{$fg_bold[green]%}%~%{$fg_bold[blue]%}\$(__git_ps1 ' %s') %{$fg_bold[magenta]%}$ %{$reset_color%}"
 
 # makes color constants available
 autoload -U colors
