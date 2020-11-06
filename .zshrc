@@ -46,6 +46,12 @@ g() {
   fi
 }
 
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH=~/.npm-global/bin:$PATH
+
 # rbenv
 eval "$(rbenv init -)"
 
